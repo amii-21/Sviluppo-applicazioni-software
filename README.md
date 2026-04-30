@@ -28,15 +28,11 @@ The assignment followed a complete development process:
 # 1. Clone the repo
 git clone https://github.com/amii-21/Sviluppo-applicazioni-software.git
 
-# 2. Create the database
-mysql -u root -p < src/main/resources/schema.sql
+# 2. Run
+mvn compile exec:java
 
-# 3. Configure DB connection
-# Edit src/main/resources/database.properties with your credentials
-
-# 4. Build and run
-mvn clean install
-mvn exec:java
+# Run tests
+mvn test
 ```
 
 ## Project structure
